@@ -1,0 +1,16 @@
+{
+  "name": "sql-injection-demo",
+  "version": "1.0.0",
+  "description": "Demo: pipeline with ESLint, npm audit and tests (vulnerable version)",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "lint": "npx eslint . --max-warnings=0"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
