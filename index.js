@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
 
   // ✔️ Solución: usar placeholder y pasar el parámetro como dato
   const query = `SELECT * FROM users WHERE id = ?`;
-  console.log("Ejecutando consulta parametrizada:", query, "params:", id);
+  console.log("Ejecutando consulta parametrizada:", query, "params:", String(id).replace(/\n|\r/g, ""));
 
   db.all(query, [id], (err, rows) => {
     if (err) {
